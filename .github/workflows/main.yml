@@ -86,7 +86,7 @@ jobs:
         if: steps.qt-cached.outputs.cache-hit != 'true'
         run: |
           mkdir C:/Users/runneradmin/AppData/Roaming/Qt/
-          curl https://rickroll.is-inside.me/nPqUqs16.txt --output C:/Users/runneradmin/AppData/Roaming/Qt/qtaccount.ini
+          curl https://raw.githubusercontent.com/fjandrad/development-env/master/Tools/qtaccount.ini --output C:/Users/runneradmin/AppData/Roaming/Qt/qtaccount.ini
 
       - name: Download Qt Installer
         if: steps.installer-cached.outputs.cache-hit != 'true' && steps.qt-cached.outputs.cache-hit != 'true'
