@@ -99,7 +99,7 @@ jobs:
       - name: Install Qt
         if: steps.qt-cached.outputs.cache-hit != 'true'
         shell: cmd
-        run: installer.exe -v --script nonInteractive.qs --silent
+        run: installer.exe -v --script nonInteractive.qs
 
       - name: Setup CMake
         run: |
